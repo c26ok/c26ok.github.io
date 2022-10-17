@@ -4,42 +4,49 @@
 <head>
 	<style type="text/css">
 		div{
-			width: 100px;
- 			height: 800px;
+			width: 200px;
+ 			height: 200px;
  	 		position: relative;
- 			background-color: red;
+ 	 		background-size: contain;
+  			background-repeat: no-repeat;
  			animation-name: animation;
- 			animation-duration: 4s;
+ 			animation-duration: 10s;
  	 		animation-iteration-count: infinite;
- 			animation-direction: alternate;
 		}
-		#one{
+		#sun{
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sun.svg/2048px-Sun.svg.png);
 			animation-delay: 0s;
+			left:0px; top:500px;
+
 		}
-		#two{
-			animation-delay: 1s;
+
+		#moon{
+			background-image: url(https://www.ifate.com/ifateapps/app_images/alpha-moon.png);
+			animation-delay: 5s;
+			left:0px; top:500px;
 		}
-		#three{
-			animation-delay: 2s;
-		}
-		#four{
-			animation-delay: 3s;
-		}
-		#five{
-			animation-delay: 4s;
-		}
+
 		@keyframes animation{
-  			0%   {background-color:red; left:0px; top:0px;}
-  			25%  {background-color:yellow; left:335px; top:0px;}
-  			50%  {background-color:green; left:670px; top:0px;}
-  			75%  {background-color:blue; left: 1005px; top:0px;}
-  			100% {background-color:purple; left:1340px; top:0px;}
+  			0%   {left:0px; top:500px;}
+  			25%  {left:670px; top:100px;}
+  			50%  {left:1340px; top:500px;}
+  			75%  {left: 670px; top:900px;}
+  			100% {left:0px; top:500px;}
   		}
   		body{
-  			background-color: black;
   			margin-top: 0px;
   			margin-right: 0px;
   			margin-left: 0px;
+  			animation-name: bacgkround;
+ 			animation-duration: 10s;
+ 	 		animation-iteration-count: infinite;
+  		}
+ 		@keyframes bacgkround{
+  			0%   {background-color:orange;}
+  			25%  {background-color:deepskyblue;}
+  			50%  {background-color:orange;}
+  			75%  {background-color:navy;}
+  			100% {background-color:orange;}
   		}
   	</style>
 </head>
@@ -47,21 +54,9 @@
 
 
 <body>
-	<div id="one">
- 	 
- 	</div>
- 	<div id="two">
- 	 
- 	</div>
- 	<div id="three">
- 	 
- 	</div>
- 	<div id="four">
- 	 
- 	</div>
- 	<div id="five">
- 	 
- 	</div>
+	<div id="sun"> </div>
+	<div id="moon"> </div>
+
 
 </body>
 
