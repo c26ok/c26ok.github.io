@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#play{
+			width: 8%;
+			height: 16%;
+			background-image: url(https://cdn3.iconfinder.com/data/icons/multimedia-and-media-player-solid/48/Artboard_14-512.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			position: absolute;
+			top: 42%;
+			left: 46%;
+
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id="play"></div>
+	<script type="text/javascript">
+		document.addEventListener(
+			"click", function(event){
+				console.log(event)
+			play.style.left = event.clientX - 64 + "px"
+			play.style.top = event.clientY - 58 + "px"
+			})
+
+	</script>
+</body>
+</html>
