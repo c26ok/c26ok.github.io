@@ -12,21 +12,39 @@
 			position: absolute;
 			top: 42%;
 			left: 46%;
-
-
+		}
+		#circle{
+  			position:absolute;
+  			transform:translate(-50%,-50%);
+  			height:35px;
+  			width:35px;
+  			border-radius:50%;
+ 			border:2px solid black;
+ 		 	background-image: url(https://images.emojiterra.com/google/android-11/512px/1f3f3-1f308.png);
+ 		 	background-size: contain;
 
 		}
 	</style>
 </head>
 <body>
 	<div id="play"></div>
+	 <div id="circle"></div>
 	<script type="text/javascript">
+		document.addEventListener('mousemove', function(e) {
+			let body = document.querySelector('body');
+			let circle = document.getElementById('circle');
+			let left = e.offsetX;
+			let top = e.offsetY;
+			circle.style.left = left + 'px';
+			circle.style.top = top + 'px';
+});
 		document.addEventListener(
 			"click", function(event){
 				console.log(event)
 			play.style.left = event.clientX - 64 + "px"
 			play.style.top = event.clientY - 58 + "px"
 			})
+	
 
 	</script>
 </body>
