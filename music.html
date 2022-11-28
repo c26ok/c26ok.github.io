@@ -15,11 +15,16 @@
 		}
 		#circle{
   			position:absolute;
-  			transform:translate(-50%,-50%);
+  			height: 100vh;
   			height:35px;
   			width:35px;
   			border-radius:50%;
- 			border:2px solid black;
+ 			border:2px solid #000;
+ 			box-sizing: border-box;
+ 			trabsition: 0.1s;
+ 			transform: translate(-50%, -50%);
+ 			border-radius: 50%;
+ 			pointer-events: none;
  		 	background-image: url(https://images.emojiterra.com/google/android-11/512px/1f3f3-1f308.png);
  		 	background-size: contain;
 
@@ -28,16 +33,18 @@
 </head>
 <body>
 	<div id="play"></div>
-	 <div id="circle"></div>
+	<div id="circle"></div>
 	<script type="text/javascript">
-		document.addEventListener('mousemove', function(e) {
-			let body = document.querySelector('body');
-			let circle = document.getElementById('circle');
-			let left = e.offsetX;
-			let top = e.offsetY;
-			circle.style.left = left + 'px';
-			circle.style.top = top + 'px';
-});
+		var circle = document.getElementById('cursor');
+		document.addEventListener(
+			'mousemove', function(e))
+		var x = e.clientX;
+		var y = e.clientY;
+		circle.style.left = x + "px"
+		circle.style.top = y + "px"
+
+
+
 		document.addEventListener(
 			"click", function(event){
 				console.log(event)
