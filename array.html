@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#square{
+			font-size: 40px;
+		}
+		#asquare{
+			font-size: 40px;
+		}
+		#bsquare{
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<div id="square"></div>
+	<div id="asquare"></div>
+	<div id="bsquare"></div>
+	<div id="win"></div>
+</center>
+	<script type="text/javascript">
+		
+		
+
+		var breakfast = ["pancakes", "waffles", "coffee", "bacon", "cereal", "french toast"]
+
+		console.log(breakfast[2])
+
+		document.addEventListener("click", function(){
+			win.innerText = " "
+			var crandom = Math.round(Math.random()*5)
+			var arandom = Math.round(Math.random()*5)
+			var brandom = Math.round(Math.random()*5)
+			square.innerText = breakfast[crandom]
+			asquare.innerText = breakfast[arandom]
+			bsquare.innerText = breakfast[brandom]
+			if (crandom=arandombrandom){
+					win.innerText = "You Win!"
+			}
+			
+		})
+	</script>
+</body>
+</html>
