@@ -6,8 +6,7 @@
 
 		#box{
 			width: 100%;
-			height: 950px;
-			 background-size: cover;
+			height: 850px;
 			 background-position: center;
 			 background-repeat: no-repeat;
 		}
@@ -33,12 +32,14 @@
 			if(counter%2 == 1){
 				box.style.
 				backgroundImage = "url(https://cdn.dribbble.com/users/261567/screenshots/2407141/nutcracker.gif)"
+				box.style.backgroundSize = "cover";
 				audio.play()
 				audiotwo.pause()
 			}
 			if(counter%2 == 0){
 				box.style.
-				backgroundImage = "url(file:///Users/c26ok/Desktop/c26ok.github.io/Screen%20Shot%202022-11-17%20at%202.24.39%20PM.png)";
+				backgroundImage = "url(https://www.myhappybirthdays.com/wp-content/uploads/2019/06/Good-luck.png)";
+				box.style.backgroundSize = "contain";
 				audio.pause()
 				audiotwo.play()
 			}
