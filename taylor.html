@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#square{
+			length: 200px;
+			width: 200px;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#button{
+			length: 20px;
+			width: 40px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: blue;
+		}
+	</style>
+
+</head>
+<body>
+		<div id="button"></div>
+	<div id="square"></div>
+	<audio id="story"><source src="0.mp3" type=""></audio>
+	<audio id="belong"><source src="1.mp3" type=""></audio>
+	<audio id="thislove"><source src="2.mp3" type=""></audio>
+	<audio id="alltoo"><source src="3.mp3" type=""></audio>
+
+	
+	<script type="text/javascript">
+		var a1 = document.getElementById("story"); 
+		var a2 = document.getElementById("belong"); 
+   		var a3 = document.getElementById("thislove"); 
+		var a4 = document.getElementById("alltoo"); 
+
+		document.getElementById("button").onclick = function() {myFunction()};
+
+		function myFunction() { 
+		        var num = Math.floor(Math.random() * 5) + 1;
+		        if(num == 1){
+		            x = a1;
+		            a1.play();
+		            square.style.backgroundImage = "0.jpg"
+		        }else if(num == 2){
+		            x = a2;
+		            a2.play();
+		            square.style.backgroundImage = "1.jpg"
+		        }else if(num == 3){
+		            x = a3;
+		            a3.play();
+		            square.style.backgroundImage = "2.jpg"
+		        }else if(num == 4){
+		            x = a4;
+		            a4.play();
+		            square.style.backgroundImage = "3.jpg"
+		        }
+		      }
+	</script>
+</body>
+</html>

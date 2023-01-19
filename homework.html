@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		p{
+			font-family: 'Cabin Sketch', cursive;
+			color: purple;
+			font-size: 30px;
+		}
+		#alfred{
+			background-size: contain;
+			position: absolute;
+			display: inline-block;
+			display-position: center;
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			margin: 10px;
+			background-image: url(goldfinch.png);
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<p> Want to know more about birds, check out <a href="https://www.birds.cornell.edu/home/">The Cornell Ornithology Lab Website</a>!</p>
+<div id="alfred" class="square"></div>
+
+<script type="text/javascript">
+	var bird = document.getElementById("alfred");
+
+	document.addEventListener("click", function (event){
+		// console.log(event);
+		console.log(event.clientX, event.clientY);
+		bird.style.left= event.clientX+"px";
+		bird.style.top= event.clientY+"px";
+	})
+</script>
+</body>
+</html>
