@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.flags{
+			width: 100px;
+			height: 100px;
+			background-image: url(https://www.ikea.com/us/en/images/products/konsistens-wall-oven-with-self-cleaning-stainless-steel__0852221_pe779999_s5.jpg?f=s);
+			margin: 3px;
+			display: inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+		//goal: make 1000 or more divs. To do this we are going to create a function/recipe which creates divs - makes a div, puts in the body, adds class which allows uus to style it. We'll run this function 1000 times in a for loop//
+
+		function makeFlags (placeholder){
+			var box = document.createElement("div")
+			document.body.appendChild(box)
+			box.classList.add("flags")
+			box.innerText = placeholder
+			backgroundImage = placeholder + ".gif"
+			box.addEventListener("click", function(){
+				box.style.backgroundImage = "url(https://cdn.shopify.com/s/files/1/1749/6693/products/Plain_A.jpg?v=1672344071)"
+			})
+		}
+for (var i=0; i<200; i=i+1)
+	{makeFlags(i)}
+
+</script>
+</body>
+</html>
