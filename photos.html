@@ -36,18 +36,36 @@
 			height: 100vh;
 			width: 100%;
 		}
+		#camera{
+ 			position: fixed;
+			top: 670px;
+			left: 850px;
+			width: 50px;
+			height: 50px;
+			background-image: url(camera.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+}
 	</style>
 </head>
 <body>
 <div id="phone"></div>
+<div id="camera"></div>
+
 <script type="text/javascript">
 	var colors = ["url(one.jpg)", "url(street.jpg)", "url(two.jpg)", "url(three.jpg)", "url(four.jpg)", "url(five.jpg)", "url(six.jpg)", "url(seven.jpg)"]
-	phone.addEventListener("click", function(){
+	var x=1
+	camera.addEventListener("click", function(){
+			document.body.style.backgroundSize = "45%"
+			document.body.style.backgroundImage = "url(oliver.jpg)"
+		}
+	)
+phone.addEventListener("click", function(){
 		var x = Math.floor(Math.random() * 7.9)
+		document.body.style.backgroundSize = "80%"
 		document.body.style.backgroundImage = colors[x]
 		console.log(colors[x])
-
-	})
+})
 </script>
 </body>
 </html>

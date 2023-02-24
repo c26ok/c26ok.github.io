@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+/*This updates the color, width, and height of the buggy. Additionally it makes the possition absolute so it can be edited.*/
+body {
+	background-color: lightgray;
+}
+		#buggy{
+			width:200px;
+			height:200px;
+			background-image:url("car1.png");
+			left:10px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+	<!-- this creates a div named buggy to be edited in the css and javascript -->
+	<div id="buggy"></div>
+
+	<script type="text/javascript">
+		//this makes the buggy 0 pixles from the left side of the screen//
+		buggy.style.left = "0px";
+			//This sets x to be equal to how far the buggy is from the left (0px)//
+		 var x = parseInt(buggy.style.left);
+		 var y = 200
+		 //this "listens" to see when any key is pressed//
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			//this increases x any time a key is pressed/
+			//x = x+10;
+			//this updates how far the buggy is from the left to equal the current x//
+			//buggy.style.left = x +"px";
+		if (event.code === "ArrowLeft"){
+			x = x-10;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car2.png')"
+  		} 
+  		else if (event.code === "ArrowRight"){
+ 		 	x = x+10;
+			buggy.style.left = x +"px";
+			buggy.style.backgroundImage = "url('car1.png')"
+
+		  }
+		else if (event.code === "ArrowDown"){
+			y = y-10
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car4.png')"
+  		} 
+  		else if (event.code === "ArrowUp"){
+ 		 	y = y+10
+			buggy.style.width = y + "px"
+			buggy.style.height = y + "px"
+			buggy.style.backgroundImage = "url('car3.png')"
+		  }
+		})
+
+	</script>
+
+</body>
+</html>
