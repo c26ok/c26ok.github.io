@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock Paper Scissors</title>
+	<style type="text/css">
+		#id {
+			height: 500px;
+			width: 500px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: plum;
+			animation-duration: 4s;
+
+		}
+		#id2 {
+			height: 500px;
+			width: 500px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: plum;
+			animation-duration: 4s;
+
+		}
+		body{
+			background-color: midnightblue;
+		}
+
+		@keyframes go{
+			0%{
+				background-image: url("rock.png");
+				background-color: plum;
+			}
+			19%{
+				background-image: url("rock.png");
+				background-color: plum;
+			}
+			
+			20%{
+				background-image: url("paper.png");
+				background-color: plum;
+			}
+			39%{
+				background-image: url("paper.png");
+				background-color: plum;
+			}
+			40%{
+				background-image: url("Scissors.png");
+				background-color: plum;
+			}
+			59%{
+				background-image: url("Scissors.png");
+				background-color: plum;
+			}
+			60%{
+				background-image: url("says.png");
+				background-color: plum;
+			}
+			79%{
+				background-image: url("says.png");
+				background-color: plum;
+			}
+			80%{
+				background-image: url("shoot.png");
+				background-color: plum;
+			}
+			99%{
+				background-image: url("shoot.png");
+				background-color: plum;
+			}
+		}
+	</style>
+</head>
+<body>
+	<center><div id="id"></div><div id="id2"></div></center>
+	
+<script type="text/javascript">
+	var background = ["url(rock.png)", "url(paper.png)", "url(Scissors.png)"]
+
+	document.addEventListener("click", function(){
+		var x = Math.floor(Math.random() * 2.9)
+		id.style.animationName = "go"
+		id.style.backgroundImage = background[x]
+		var z = Math.floor(Math.random() * 2.9)
+		id2.style.animationName = "go"
+		id2.style.backgroundImage = background[z]
+		console.log(x)
+		console.log(z)
+		if (x==0 && z==2){
+					id.style.backgroundColor = "green"
+					id2.style.backgroundColor = "red"
+		}else if (z==0 && x==2){
+					id2.style.backgroundColor = "green"
+					id.style.backgroundColor = "red"
+		}else if (z==x) {
+					id2.style.backgroundColor = "blue"
+					id.style.backgroundColor = "blue"
+		}else if (x<z){
+					id2.style.backgroundColor = "green"
+					id.style.backgroundColor = "red"
+		}else if (x>z){
+					id.style.backgroundColor = "green"
+					id2.style.backgroundColor = "red"
+		}
+
+})
+
+</script>
+</body>
+</html>
