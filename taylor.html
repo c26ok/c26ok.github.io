@@ -3,58 +3,345 @@
 <head>
 	<style type="text/css">
 		#square{
-			length: 200px;
-			width: 200px;
-			background-size: contain;
+			width: 800px;
+			height: 800px;
 			background-repeat: no-repeat;
+			background-size: contain;
 		}
-		#button{
-			length: 20px;
-			width: 40px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-color: blue;
+		body{
+			background-color: rgb(50,0,50);
 		}
 	</style>
 
 </head>
 <body>
-		<div id="button"></div>
-	<div id="square"></div>
+<center>	<div id="click"></div><div id="square"></div> </center>
 	<audio id="story"><source src="0.mp3" type=""></audio>
 	<audio id="belong"><source src="1.mp3" type=""></audio>
 	<audio id="thislove"><source src="2.mp3" type=""></audio>
 	<audio id="alltoo"><source src="3.mp3" type=""></audio>
+	<audio id="bad"><source src="4.mp3" type=""></audio>
+	<audio id="cornelia"><source src="5.mp3" type=""></audio>
+	<audio id="style"><source src="6.mp3" type=""></audio>
+	<audio id="clean"><source src="7.mp3" type=""></audio>
+	<audio id="deathcuts"><source src="8.mp3" type=""></audio>
+	<audio id="mine"><source src="9.mp3" type=""></audio>
+	<audio id="kid"><source src="10.mp3" type=""></audio>
+	<audio id="dynasty"><source src="11.mp3" type=""></audio>
+	<audio id="crime"><source src="12.mp3" type=""></audio>
+	<audio id="speak"><source src="13.mp3" type=""></audio>
+	<audio id="mean"><source src="14.mp3" type=""></audio>
+	<audio id="sparks"><source src="15.mp3" type=""></audio>
+	<audio id="red1"><source src="16.mp3" type=""></audio>
+	<audio id="red2"><source src="17.mp3" type=""></audio>
+	<audio id="evermore1"><source src="18.mp3" type=""></audio>
+	<audio id="evermore2"><source src="19.mp3" type=""></audio>
+	<audio id="folklore1"><source src="20.mp3" type=""></audio>
+	<audio id="folklore2"><source src="21.mp3" type=""></audio>
+	<audio id="folklore3"><source src="22.mp3" type=""></audio>
+	<audio id="folklore4"><source src="23.mp3" type=""></audio>
+	<audio id="folklore5"><source src="24.mp3" type=""></audio>
+	<audio id="lover1"><source src="25.mp3" type=""></audio>
+	<audio id="lover2"><source src="26.mp3" type=""></audio>
+	<audio id="lover3"><source src="27.mp3" type=""></audio>
+	<audio id="lover4"><source src="28.mp3" type=""></audio>
+	<audio id="tswift1"><source src="29.mp3" type=""></audio>
+	<audio id="19891"><source src="30.mp3" type=""></audio>
+	<audio id="19892"><source src="31.mp3" type=""></audio>
+	<audio id="19893"><source src="32.mp3" type=""></audio>
+	<audio id="19894"><source src="33.mp3" type=""></audio>
+	<audio id="19895"><source src="34.mp3" type=""></audio>
+	<audio id="fearless1"><source src="35.mp3" type=""></audio>
+	<audio id="midnights1"><source src="36.mp3" type=""></audio>
+	<audio id="midnights2"><source src="37.mp3" type=""></audio>
+	<audio id="midnights3"><source src="38.mp3" type=""></audio>
+	<audio id="midnights4"><source src="39.mp3" type=""></audio>
 
-	
 	<script type="text/javascript">
 		var a1 = document.getElementById("story"); 
 		var a2 = document.getElementById("belong"); 
    		var a3 = document.getElementById("thislove"); 
 		var a4 = document.getElementById("alltoo"); 
-
-		document.getElementById("button").onclick = function() {myFunction()};
-
-		function myFunction() { 
-		        var num = Math.floor(Math.random() * 5) + 1;
+		var a5 = document.getElementById("bad"); 
+		var a6 = document.getElementById("cornelia");
+		var a7 = document.getElementById("style");  
+		var a8 = document.getElementById("clean");
+		var a9 = document.getElementById("deathcuts");  
+		var a10 = document.getElementById("mine");  
+		var a11 = document.getElementById("kid");
+		var a12 = document.getElementById("dynasty");  
+		var a13 = document.getElementById("crime");  
+		var a14 = document.getElementById("speak"); 
+		var a15 = document.getElementById("mean"); 
+		var a16 = document.getElementById("sparks"); 
+		var a17 = document.getElementById("red1"); 
+		var a18 = document.getElementById("red2"); 
+		var a19 = document.getElementById("evermore1"); 
+		var a20 = document.getElementById("evermore2"); 
+   		var a21 = document.getElementById("folklore1"); 
+		var a22 = document.getElementById("folklore2"); 
+		var a23 = document.getElementById("folklore3"); 
+		var a24 = document.getElementById("folklore4");
+		var a25 = document.getElementById("lover1");  
+		var a26 = document.getElementById("lover2");
+		var a27 = document.getElementById("lover3");  
+		var a28 = document.getElementById("lover4");  
+		var a29 = document.getElementById("tswift1");
+		var a30 = document.getElementById("19891");  
+		var a31 = document.getElementById("19892");  
+		var a32 = document.getElementById("19893"); 
+		var a33 = document.getElementById("19894"); 
+		var a34 = document.getElementById("19895"); 
+		var a35 = document.getElementById("fearless1"); 
+		var a36 = document.getElementById("midnights1"); 
+		var a37 = document.getElementById("midnights2"); 
+		var a38 = document.getElementById("midnights3"); 
+		var a39 = document.getElementById("midnights4"); 
+		var a40 = document.getElementById("folklore5");
+		square.addEventListener("click", function(){
+			a1.pause();
+			a2.pause();
+			a3.pause();
+			a4.pause();		
+			a5.pause();
+			a6.pause();
+			a7.pause();
+			a8.pause();
+			a9.pause();
+			a10.pause();
+			a11.pause();
+			a12.pause();
+			a13.pause();
+			a14.pause();
+			a15.pause();
+			a16.pause();
+			a17.pause();
+			a18.pause();
+			a19.pause();
+			a20.pause();
+			a21.pause();
+			a22.pause();		
+			a23.pause();
+			a24.pause();
+			a25.pause();
+			a26.pause();
+			a27.pause();
+			a28.pause();
+			a29.pause();
+			a30.pause();
+			a31.pause();
+			a32.pause();
+			a33.pause();
+			a34.pause();
+			a35.pause();
+			a36.pause();
+			a37.pause();
+			a38.pause();
+			a39.pause();
+			a40.pause();
+		        var num = Math.floor(Math.random() * 39.99) + 1;
 		        if(num == 1){
 		            x = a1;
 		            a1.play();
-		            square.style.backgroundImage = "0.jpg"
+		            square.style.backgroundImage = "url(0.png)"
+		            document.body.style.backgroundColor = "PapayaWhip"
 		        }else if(num == 2){
 		            x = a2;
 		            a2.play();
-		            square.style.backgroundImage = "1.jpg"
+		            square.style.backgroundImage = "url(0.png)"
+		            document.body.style.backgroundColor = "PapayaWhip"
 		        }else if(num == 3){
 		            x = a3;
 		            a3.play();
-		            square.style.backgroundImage = "2.jpg"
+		            square.style.backgroundImage = "url(2.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
 		        }else if(num == 4){
 		            x = a4;
 		            a4.play();
-		            square.style.backgroundImage = "3.jpg"
+		            square.style.backgroundImage = "url(3.png)"
+		            document.body.style.backgroundColor = "DarkRed"
+		        }else if(num == 5){
+		            x = a4;
+		            a5.play();
+		            square.style.backgroundImage = "url(4.png)"
+		            document.body.style.backgroundColor = "Black"
+		        }else if(num == 6){
+		            x = a4;
+		            a6.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 7){
+		            x = a4;
+		            a7.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 8){
+		            x = a4;
+		            a8.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 9){
+		            x = a4;
+		            a9.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 10){
+		            x = a4;
+		            a10.play();
+		            square.style.backgroundImage = "url(9.png)"
+		            document.body.style.backgroundColor = "FireBrick"
+		        }else if(num == 11){
+		            x = a4;
+		            a11.play();
+		            square.style.backgroundImage = "url(10.png)"
+		            document.body.style.backgroundColor = "DarkCyan"
+		        }else if(num == 12){
+		            x = a4;
+		            a12.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 13){
+		            x = a4;
+		            a13.play();
+		            square.style.backgroundImage = "url(12.png)"
+		            document.body.style.backgroundColor = "rgb(30,20,30)"
+		        }else if(num == 14){
+		            x = a14;
+		            a14.play();
+		            square.style.backgroundImage = "url(9.png)"
+		            document.body.style.backgroundColor = "FireBrick"
+		        }else if(num == 15){
+		            x = a15;
+		            a15.play();
+		            square.style.backgroundImage = "url(9.png)"
+		            document.body.style.backgroundColor = "FireBrick"
+		        }else if(num == 16){
+		            x = a16;
+		            a16.play();
+		            square.style.backgroundImage = "url(9.png)"
+		            document.body.style.backgroundColor = "FireBrick"
+		        }else if(num == 17){
+		            x = a17;
+		            a4.play();
+		            square.style.backgroundImage = "url(3.png)"
+		            document.body.style.backgroundColor = "DarkRed"
+		        }else if(num == 18){
+		            x = a18;
+		            a4.play();
+		            square.style.backgroundImage = "url(3.png)"
+		            document.body.style.backgroundColor = "DarkRed"
+		        }else if(num == 19){
+		            x = a4;
+		            a19.play();
+		            square.style.backgroundImage = "url(12.png)"
+		            document.body.style.backgroundColor = "rgb(30,20,30)"
+		        }else if(num == 20){
+		            x = a4;
+		            a20.play();
+		            square.style.backgroundImage = "url(12.png)"
+		            document.body.style.backgroundColor = "rgb(30,20,30)"
+		        }else if(num == 21){
+		            x = a4;
+		            a21.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 22){
+		            x = a4;
+		            a22.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 23){
+		            x = a4;
+		            a23.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 24){
+		            x = a4;
+		            a24.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 25){
+		            x = a4;
+		            a40.play();
+		            square.style.backgroundImage = "url(11.png)"
+		            document.body.style.backgroundColor = "Gainsboro"
+		        }else if(num == 26){
+		            x = a4;
+		            a25.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 27){
+		            x = a4;
+		            a26.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 28){
+		            x = a4;
+		            a27.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 29){
+		            x = a4;
+		            a28.play();
+		            square.style.backgroundImage = "url(5.png)"
+		            document.body.style.backgroundColor = "LightCyan"
+		        }else if(num == 30){
+		            x = a4;
+		            a30.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 31){
+		            x = a4;
+		            a31.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 32){
+		            x = a4;
+		            a32.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 33){
+		            x = a4;
+		            a33.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 34){
+		            x = a4;
+		            a34.play();
+		            square.style.backgroundImage = "url(6.png)"
+		            document.body.style.backgroundColor = "Cornsilk"
+		        }else if(num == 35){
+		            x = a2;
+		            a35.play();
+		            square.style.backgroundImage = "url(0.png)"
+		            document.body.style.backgroundColor = "PapayaWhip"
+		        }else if(num == 36){
+		            x = a4;
+		            a36.play();
+		            square.style.backgroundImage = "url(10.png)"
+		            document.body.style.backgroundColor = "DarkCyan"
+		        }else if(num == 37){
+		            x = a4;
+		            a37.play();
+		            square.style.backgroundImage = "url(10.png)"
+		            document.body.style.backgroundColor = "DarkCyan"
+		        }else if(num == 38){
+		            x = a4;
+		            a38.play();
+		            square.style.backgroundImage = "url(10.png)"
+		            document.body.style.backgroundColor = "DarkCyan"
+		        }else if(num == 39){
+		            x = a4;
+		            a39.play();
+		            square.style.backgroundImage = "url(10.png)"
+		            document.body.style.backgroundColor = "DarkCyan"
+		        }else if(num == 40){
+		            x = a4;
+		            a29.play();
+		            square.style.backgroundImage = "url(123.png)"
+		            document.body.style.backgroundColor = "Aqua"
 		        }
-		      }
+		      })
 	</script>
 </body>
 </html>
