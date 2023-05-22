@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Amatic+SC&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		.links{
+			width: 49.5%;
+			font-size: 5vw;
+			display: inline-block;
+			height: 120px;
+			padding-top: 20px;
+			text-align: center;
+			font-family: 'Amatic SC', serif;
+			transition: 1s;
+			text-decoration: none;
+			color: white;
+		}
+
+		#back{
+			background-image: url(https://cdn140.picsart.com/266575414009212.png);
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%)
+			background-size: 90%;
+			align-content: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 700px;
+			width: 550px;
+			margin-left: auto;	
+			margin-right: auto;	
+			transition: 2s;
+		}
+		#back:hover{
+			filter: grayscale(00%);
+			transition: 2s;
+		}
+		#menu{
+			transition: 2s;
+			width: 100%;
+			height: 125px;
+			background-color: violet;
+		}		body{
+			background-color: black;
+		}
+		#msg {
+			width: 500px;
+			height: 400px;
+		}
+		#welcome{
+			font-size: 7vw;
+			width: 100%;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-family: 'Amatic SC', cursive;
+			height: 150px;
+		}
+		#object {
+			height: 50px;
+			width: 45px;
+		  margin: 0;
+		  padding: 0.5em;
+		  background-image: url(https://cdn131.picsart.com/364820746071211.png);
+		  background-size: 100%;
+		  animation-name: revolve;
+		  animation-duration: 2s;
+		  animation-iteration-count: infinite
+		}
+		#about{
+			font-size: 3vw;
+			font-family: 'Amatic SC', cursive;
+			text-align: center;
+			color: white;
+		}
+		#me{
+			font-size: 7vw;
+			font-family: 'Amatic SC', cursive;
+			text-align: center;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<a class="links" id="projects" href ="Projects.html"> Projects </a>
+		<a class="links" id="journal" href="Journal.html"> Journal </a>
+	
+	</div>
+	<div id="welcome"> Welcome To My Website! </div>
+ 	<div id ="back"></div>
+ 	<div id="me">ABOUT ME</div>
+	<div id="about">
+		Hi! My name is Oliver and I am the creator of this website. <br>
+		I love theatre, filmmaking, and also hockey! <br>
+		I'm currently in 9th Grade and in Computer Science 1. <br>
+		I hope you like my projects!
+	</div>
+	<div id="container">
+
+ 	<div id="msg"></div>
+  
+ 	<div id ="object"> </div>
+ 	
+
+ 	<script type="text/javascript">
+		 		//on mouseEvent Properties
+		
+
+		  var followCursor = (
+		  function() {
+		  var s = document.getElementById('object');
+		  s.style.position = 'absolute';
+
+		  return {
+		    init: function() {
+		      document.body.appendChild(s);
+		    },
+
+		    run: function(e) {
+		      var e = e || window.event;
+		      s.style.left = (e.clientX + 2) + 'px';
+		      s.style.top = (e.clientY) + 'px';
+		      getMouseCoords(e);
+		    }
+		  };
+		}());
+
+		window.onload = function() {
+		  followCursor.init();
+		  document.body.onmousemove = followCursor.run;
+		}
+ 	</script>
+</div>
+</body>
+</html>

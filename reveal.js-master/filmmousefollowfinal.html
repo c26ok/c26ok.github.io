@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Follow The Mouse</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		 
+		#box{
+			width:200px;
+			height:200px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://cdn-7.nikon-cdn.com/Images/CPCAssets/pdp/z8/img/hero-camera.png);
+			position:absolute;
+			transition: 1s;
+		}
+
+		#person{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/ClapperboardColor.svg/220px-ClapperboardColor.svg.png);
+			position:absolute;
+			transition: 0s;
+		}
+		 #nextlink{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            color: black;
+            right: 0px;
+            position: absolute;
+            text-decoration: none;
+        }
+        #title{
+            width: 180px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+
+	</style>
+</head>
+<body>
+	 <div id="title">This Is The New Project:</div>
+    <a id="nextlink" href="filmpresentation.html">Click Here To Continue</a>
+	<div id="box"></div>
+	<div id="person"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				person.style.left = event.clientX +10  + "px";
+				person.style.top = event.clientY + 20+ "px";
+			}
+		);
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				box.style.left = event.clientX + "px";
+				box.style.top = event.clientY - 20 + "px";
+			}
+		);
+	</script>
+</body>
+</html>

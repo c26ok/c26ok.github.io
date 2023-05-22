@@ -1,0 +1,59 @@
+           
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            font-family:;
+            font-size:;
+            color:;
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+<h1> <!-- If you'd like a title, erase this text and feel free to put your title here! In the style section, in the curly brackets called "h1," put in the font style and font size you want --> <h1>
+
+<br>
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+
+
+    var colors = ['url(https://p.turbosquid.com/ts-thumb/Hx/Uo7wjV/BXrI32ve/moviecamera1gfh/jpg/1302759998/1920x1080/fit_q87/53a87ea8f2ae425ab6e5532a8a2949374da25ed6/moviecamera1gfh.jpg)',
+     'url(https://pbblogassets.s3.amazonaws.com/uploads/2022/04/12100438/green-screen-cover.jpg)', 
+     'url(https://assets.videomaker.com/drpl/articles/18914/357-R01-Final-Cut-10.3-primary.png)', 
+     'url(https://i0.wp.com/editmentor.com/blog/wp-content/uploads/2021/08/film-slates.jpeg?fit=1648%2C975&ssl=1)', 
+     'url(https://www.cined.com/content/uploads/2016/08/film-lighting_featured-1300x750.jpg)', 
+     'url(https://store.dji.com/guides/wp-content/uploads/2019/08/Loki-Feature-Pic.jpg)'];
+    for (let i = 0; i < 24; i++) {
+        var square = document.createElement('div');
+            document.body.appendChild(square);
+            square.style.width = "31.9%";
+            square.style.height = "450px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.backgroundSize = "contain";
+            square.style.backgroundImage = colors[i%6];
+    }
+
+//Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+
+  
+</script>
+</body>
+</html>

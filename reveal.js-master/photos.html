@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Photo Project</title>
+	<style type="text/css">
+		body{
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+			background-color: black;
+			background-size: 70%;
+			background-position: center;
+		}
+		#phone{
+			width: 100%;
+			height: 100vh;
+			background-image: url("phone.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+
+
+		}
+
+		#cover{
+			width: 100%;
+			height: 10vh;
+			background-color: white;
+		}
+		#background{
+			background-size: 80%;
+			background-image: url(blackscreen.jpg);
+			height: 100vh;
+			width: 100%;
+		}
+		#camera{
+ 			position: fixed;
+			top: 670px;
+			left: 850px;
+			width: 50px;
+			height: 50px;
+			background-image: url(camera.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+}
+	</style>
+</head>
+<body>
+<div id="phone"></div>
+<div id="camera"></div>
+
+<script type="text/javascript">
+	var colors = ["url(one.jpg)", "url(street.jpg)", "url(two.jpg)", "url(three.jpg)", "url(four.jpg)", "url(five.jpg)", "url(six.jpg)", "url(seven.jpg)"]
+	var x=1
+	camera.addEventListener("click", function(){
+			document.body.style.backgroundSize = "45%"
+			document.body.style.backgroundImage = "url(oliver.jpg)"
+		}
+	)
+phone.addEventListener("click", function(){
+		var x = Math.floor(Math.random() * 7.9)
+		document.body.style.backgroundSize = "80%"
+		document.body.style.backgroundImage = colors[x]
+		console.log(colors[x])
+})
+</script>
+</body>
+</html>

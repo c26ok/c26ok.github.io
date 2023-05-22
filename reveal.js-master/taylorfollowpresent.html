@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Follow The Mouse</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		 
+		#box{
+			width:200px;
+			height:200px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://media.vanityfair.com/photos/6197d3cf5304bc62131a6771/master/w_2560%2Cc_limit/taylor-swift-unapologetic-messiness-lede.png);
+			position:absolute;
+			transition: 1s;
+		}
+
+		#person{
+			width:250px;
+			height:200px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://www.dganimalhospital.com/wp-content/uploads/2016/10/cats-health.png);
+			position:absolute;
+			transition: 0s;
+		}
+		
+
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+	<div id="person"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				person.style.left = event.clientX +10  + "px";
+				person.style.top = event.clientY + 20+ "px";
+			}
+		);
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				box.style.left = event.clientX + "px";
+				box.style.top = event.clientY - 20 + "px";
+			}
+		);
+	</script>
+</body>
+</html>

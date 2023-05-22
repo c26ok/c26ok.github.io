@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            font-family:;
+            font-size:;
+            color:;
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+
+        #nextlink{
+            width: 70px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            color: black;
+            right: 0px;
+            position: absolute;
+            text-decoration: none;
+        }
+        #title{
+            width: 402px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<h1> <!-- If you'd like a title, erase this text and feel free to put your title here! In the style section, in the curly brackets called "h1," put in the font style and font size you want --> <h1>
+
+    <div id="title">Here Is The Original Project:</div>
+    <a id="nextlink" href="hockeyquiltedit.html">Edit</a>
+<br>
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+
+
+    var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    for (let i = 0; i < 24; i++) {
+        var square = document.createElement('div');
+            document.body.appendChild(square);
+            square.style.width = "31.9%";
+            square.style.height = "450px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.backgroundSize = "contain";
+            square.style.backgroundColor = colors[i%6];
+    }
+
+//Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+
+  
+</script>
+</body>
+</html>

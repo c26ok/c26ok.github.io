@@ -1,0 +1,59 @@
+           
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            font-family:;
+            font-size:;
+            color:;
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+
+      
+    </style>
+</head>
+<body>
+<h1> <!-- If you'd like a title, erase this text and feel free to put your title here! In the style section, in the curly brackets called "h1," put in the font style and font size you want --> <h1>
+
+    
+<br>
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+
+
+    var colors = ['url(https://images.unsplash.com/photo-1562329265-95a6d7a83440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGhlYXRlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80)',
+     'url(https://res.cloudinary.com/dv3qcy9ay/image/upload/f_auto/general/venues/ZoomBackgrounds/Zoom06)', 
+     'url(https://t4.ftcdn.net/jpg/05/61/78/21/360_F_561782106_5nZ76DpjwGiQVg8xXJzwSC4JvW6gdTfu.jpg)', 
+     'url(https://t4.ftcdn.net/jpg/05/61/49/23/360_F_561492367_iMNt7BW09VTRO7myrqfsFhfdqQ4dRsR9.jpg)', 
+     'url(https://www.eventbrite.com/blog/wp-content/uploads/2022/04/iStock-538876025.jpg)', 
+     'url(https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_396,q_75,w_704/https://assets.simpleviewinc.com/simpleview/image/upload/crm/poconos/Milford-Theater-4_542A3AB0-A17F-E70F-09902B3651EA4EFF-542a380a0de265b_542a4234-e50f-a21e-74c61973894135af.jpg)'];
+    for (let i = 0; i < 24; i++) {
+        var square = document.createElement('div');
+            document.body.appendChild(square);
+            square.style.width = "31.9%";
+            square.style.height = "450px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.backgroundSize = "contain";
+            square.style.backgroundImage = colors[i%6];
+    }
+
+//Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+
+  
+</script>
+</body>
+</html>

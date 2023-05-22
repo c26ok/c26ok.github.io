@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Follow The Mouse</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		 
+		#box{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://i.pinimg.com/originals/78/0a/a2/780aa264e6ec4014edea4beb159eef51.gif);
+			position:absolute;
+			transition: 1s;
+		}
+
+		#person{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(person.svg.png);
+			position:absolute;
+			transition: 0s;
+		}
+		 #nextlink{
+            width: 160px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            color: black;
+            right: 0px;
+            position: absolute;
+            text-decoration: none;
+        }
+        #title{
+            width: 180px;
+            height: 40px;
+            background-color: red;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+
+	</style>
+</head>
+<body>
+	 <div id="title">This Is The Original Project:</div>
+    <a id="nextlink" href="hockeymousefolloweredited.html">Click Here To Edit</a>
+	<div id="box"></div>
+	<div id="person"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				person.style.left = event.clientX +10  + "px";
+				person.style.top = event.clientY + 20+ "px";
+			}
+		);
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				box.style.left = event.clientX + "px";
+				box.style.top = event.clientY + 20 + "px";
+			}
+		);
+	</script>
+</body>
+</html>

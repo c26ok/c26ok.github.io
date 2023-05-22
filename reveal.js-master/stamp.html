@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stamp Project</title>
+	<style type="text/css">
+		.cookie{
+			width: 150px;
+			height: 150px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100%;
+			background-image: url(https://i0.wp.com/www.legendmanorlabradoodles.com/wp-content/uploads/2022/01/prancer-pic.jpg?resize=604%2C688);
+			display: inline-block;
+		
+		
+
+
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		let counter = 0
+
+		function makeDiv (){
+			counter = counter + 1
+
+			let cookie = document.createElement("div")
+
+			document.body.appendChild(cookie)
+
+			cookie.classList.add("cookie")
+
+			cookie.innerText = counter
+		} 
+
+		setInterval(makeDiv, 100)
+
+	</script>
+</body>
+</html>

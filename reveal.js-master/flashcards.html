@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>English To Latin Flashcards</title>
+	<style type="text/css">
+		#box1{
+			width: 100%;	
+			height: 50vh;
+			border: 1px dotted blue;		
+			text-align: center;
+			background-color: lightgrey;
+			font-size: 100px;
+		}
+		#box2{
+			width: 100%;	
+			height: 50vh;
+			border: 1px dotted blue;		
+			display: inline-block;	
+			text-align: center;
+			background-color: black;
+			font-size: 100px;
+		}
+		#box2:hover{
+			background-color: lightgrey;
+			transition-duration: 2s;
+		}
+		body{
+			background-color: hotpink;
+		}
+	</style>
+</head>
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+<script type="text/javascript">
+	var terms = ["for", "difficult", "nearest, next", "slender, unadorned, simple", "mad", "to fall", "unlike/dissimilar to (+gen or dat)", "highest", "temple", "wisdom", "often", "before", "to say", "wise", "friendship", "counsel, plan, advice", "fall, accident, chance", "cruel", "easy", "easily", "little", "mars", "like, similar to", "greatly", "badly", "praise", "as soon as possible", "humble, lowly", "than", "to praise", "ancestors", "guest, host", "too little", "suppliant", "humble", "much, very", "hatred", "to fortify", "safe", "so", "so... as", "to loosen", "serene", "enough"]
+	var definitions = ["nam (conj.)", "difficilis difficile", "proximus -a -um", "gracilis gracile", "demens dementis", "cado cadere cecidi casum", "dissimilis dissimile", "summus -a -um", "templum -i N", "sapientia -ae F", "saepe (adv.)", "prius (adv.)", "aias", "sapiens sapientis", "amicitia -ae F", "consilium -i N.", "casus casūs M", "crudelis crudele", "facilis facile", "facile (adv.)", "parvus -a -um", "Mars Martis M", "similis simile", "magnopere (adv.)", "male (adv.)", "laus laudis F", "quam primum", "humilis humile", "quam (conj.)", "laudo laudare laudavi laudatus", "maiores maiorum M (pl)", "hospes hospitis M", "parum (adv. & indeclinable adj.)", "supplex supplicis", "multum (adv.)", "odium -i N", "munio munire munivi munitus", "tutus -a -um", "tam", "tam... quam", "solvo solvere solvi solutus", "serenus -a -um", "satis (adv. & indeclinable adj.)"] 
+	document.addEventListener("click", function(){
+		var number = Math.round(Math.random()*42);
+		box1.innerText =terms[number]
+		box2.innerText =definitions[number]
+	})
+	
+	
+</script>
+</body>
+</html>

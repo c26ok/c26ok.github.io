@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+		div{
+			width: 200px;
+ 			height: 200px;
+ 	 		position: relative;
+ 	 		background-size: contain;
+  			background-repeat: no-repeat;
+ 			animation-name: animation;
+ 			animation-duration: 10s;
+ 	 		animation-iteration-count: infinite;
+		}
+		#sun{
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sun.svg/2048px-Sun.svg.png);
+			animation-delay: 0s;
+			left:0px; top:500px;
+
+		}
+
+		#moon{
+			background-image: url(https://www.ifate.com/ifateapps/app_images/alpha-moon.png);
+			animation-delay: 5s;
+			left:0px; top:500px;
+		}
+
+		@keyframes animation{
+  			0%   {left:0px; top:500px;}
+  			25%  {left:670px; top:100px;}
+  			50%  {left:1340px; top:500px;}
+  			75%  {left: 670px; top:900px;}
+  			100% {left:0px; top:500px;}
+  		}
+  		body{
+  			margin-top: 0px;
+  			margin-right: 0px;
+  			margin-left: 0px;
+  			animation-name: bacgkround;
+ 			animation-duration: 10s;
+ 	 		animation-iteration-count: infinite;
+  		}
+ 		@keyframes bacgkround{
+  			0%   {background-color:orange;}
+  			25%  {background-color:deepskyblue;}
+  			50%  {background-color:orange;}
+  			75%  {background-color:navy;}
+  			100% {background-color:orange;}
+  		}
+  	</style>
+</head>
+
+
+
+<body>
+	<div id="sun"> </div>
+	<div id="moon"> </div>
+
+
+</body>
+
+
+
+
+</html>

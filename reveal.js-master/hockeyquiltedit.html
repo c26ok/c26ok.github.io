@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#original{
+			background-image: url(quiltcodehockey.png);
+			height: 270px;
+			width: 375px;
+			background-size: contain;
+			background-color:  black;
+			color: green;
+			background-repeat: no-repeat;
+			top: 260px;
+			left: 300px;
+			position: absolute;
+		}
+		body{
+			background-color: #2E2E2E;
+		}
+		#incorect{
+			background-image: url(quiltcodehockey.png);
+			height: 260px;
+			width: 375px;
+			background-size: contain;
+			background-color:  black;
+			color: green;
+			background-repeat: no-repeat;
+			top: 10px;
+			left: 800px;
+			position: absolute;
+		}
+		#incorecttwo{
+			background-image: url(quiltcodehockey.png);
+			height: 250px;
+			width: 375px;
+			background-size: contain;
+			background-color:  black;
+			color: green;
+			background-repeat: no-repeat;
+			top: 265px;
+			left: 800px;
+			position: absolute;
+		}
+		#correct{
+			background-image: url(quiltcodehockey.png);
+			height: 250px;
+			width: 375px;
+			background-size: contain;
+			background-color:  black;
+			color: green;
+			background-repeat: no-repeat;
+			top: 255px;
+			left: 0px;
+			position: absolute;
+		}
+		#change{
+			color: red;
+		}
+		a{
+			text-decoration: none;
+			color: green;
+		}
+		#instructions{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<div id="instructions">Chose the correct new code:</div>
+<div id="original">
+	<a id="change">The Original Code:</a> <br> <br>
+
+	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']; <br>
+	for (let i = 0; i < 24; 1++)  { <br>
+		var square = document.createElement('div'); <br>
+		document.body.appendChild(square); <br>
+		square.style.width = "31.9%"; <br>
+		square.style.height = "450px"; <br>
+		square.style.display = "inline-block"; <br>
+		square.style.margin = "10px"; <br>
+		square.style.backgroundRepeat = "no-repeat"; <br>
+		square.style.backgroundSize = "contain"; <br>
+		square.style.backgroundColor = colors[i%6]; <br>
+	}
+</div>
+<div id="incorect">
+		var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']; <br>
+	for (let i = 0; i < 24; 1++)  { <br>
+		var square = document.createElement('div'); <br>
+		document.body.appendChild(square); <br>
+		square.style.width = 
+		<a id="change">"hockey.png"; </a>
+		<br>
+		square.style.height = "450px"; <br>
+		square.style.display = "inline-block"; <br>
+		square.style.margin = "10px"; <br>
+		square.style.backgroundRepeat = "no-repeat"; <br>
+		square.style.backgroundSize = "contain"; <br>
+		square.style.backgroundColor = colors[i%6]; <br>
+	}
+</div>
+<div id="incorecttwo">
+		var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']; <br>
+	for (let i = 0; i < 24; 1++)  { <br>
+		var square = document.createElement('div'); <br>
+		document.body.appendChild(square); <br>
+		square.style.width = "31.9%";
+		<br>
+		square.style.height = "450px"; <br>
+		square.style.display = <a id="change">"hockey.png";</a> <br>
+		square.style.margin = "10px"; <br>
+		square.style.backgroundRepeat = "no-repeat"; <br>
+		square.style.backgroundSize = "contain"; <br>
+		square.style.backgroundColor = colors[i%6]; <br>
+	}
+<div id="correct"> <a href="finalhockeyquilt.html">
+		var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']; <br>
+	for (let i = 0; i < 24; 1++)  { <br>
+		var square = document.createElement('div'); <br>
+		document.body.appendChild(square); <br>
+		square.style.width = "31.9%";
+		<br>
+		square.style.height = "450px"; <br>
+		square.style.display = "inline-block"; <br>
+		square.style.margin = "10px"; <br>
+		square.style.backgroundRepeat = "no-repeat"; <br>
+		square.style.backgroundSize = "contain"; <br>
+		square.style.background<a id="change">Image = "hockey.png"; <br></a> </a>
+	}
+</div>
+</div>
+</body>
+</html>

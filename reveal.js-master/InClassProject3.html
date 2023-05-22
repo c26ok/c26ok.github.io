@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Solidarity Week!</title>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+	</style>
+
+	<style type="text/css">
+		#rainbow{
+			height: 150px;
+			width: 150px;
+			background-image: url(download.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 100px;
+		}
+		body{
+			background-color: skyblue;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="rainbow"></div>
+	<script type="text/javascript">
+		document.addEventListener("click", function makeDiv(event){
+			console.log(event.clientX, event.clientY)
+			rainbow.style.left = event.clientX - 75 + "px"
+			rainbow.style.top = event.clientY - 75 + "px"
+		})
+	</script>
+</body>
+</html>

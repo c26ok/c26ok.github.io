@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url("https://images.template.net/112330/free-digital-classroom-background-9mor1.jpg");
+			background-repeat: no-repeat;
+			background-size: 120%;
+		}
+		#desk{
+			background-image: url("https://chairish-prod.freetls.fastly.net/image/product/master/1a850ac1-8ade-4988-ba8b-6a077c0ddd59/vintage-modern-white-molded-plastic-rectangular-parsons-style-side-table-style-syroco-or-kartell-5963");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 120%;
+			height: 34.5vw;
+			top: 33vw;
+			position: absolute;
+			left: -100px;
+
+		}
+		#molly{
+			height: 3000px;
+			width: 700px;
+			position: absolute;
+			animation-duration: 5s;
+			animation-name: go;
+			background-image: url(molly.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			left: 100px;
+			top: 100px;
+
+		}
+		@keyframes go{
+			0%{
+				left: 400px;
+				top: 100px;
+			}
+			100%{
+				left: 100px;
+				top: 100px;
+			}
+			}
+		@keyframes text{
+			0%{
+				left: 400px;
+				top: 30px;
+			}
+			100%{
+				left: 100px;
+				top: 30px;
+			}
+			}
+		#speak{
+			height: 500px;
+			width: 300px;
+			position: absolute;
+			animation-duration: 5s;
+			animation-name: text;
+			background-image: url(copy.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			left: 100px;
+			top: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="molly"></div>
+<div id="speak"> <br> <br>So… for your final project... </div>
+<div id="desk"></div>
+<script type="text/javascript">
+	function newText (){
+		document.getElementById("speak").innerText = " \n \n            I really like it when you can \npresent a bunch of projects \n with the same theme!"
+		}
+	document.addEventListener("click", newText)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		p{
+			font-family: 'Cabin Sketch', cursive;
+			color: purple;
+			font-size: 30px;
+		}
+		.square{
+			background-size: contain;
+			position: absolute;
+			display: inline-block;
+			display-position: center;
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			margin: 10px;
+			background-image: url(goldfinch.png);
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<p> Want to know more about birds, check out <a href="https://www.birds.cornell.edu/home/">The Cornell Ornithology Lab Website</a>!</p>
+
+<script type="text/javascript">
+	var x == 0;
+	function makeBird() {
+		var gold = document.createElement('div');
+		document.body.appendChild(gold)
+		gold.classList.add('square');
+		gold.style.left = Math.random()*1000
+		gold.style.top = Math.random()*1000
+	}
+
+	document.addEventListener("click", function (event){
+		// console.log(event);
+		console.log(event.clientX, event.clientY);
+		gold.style.left= event.clientX+"px";
+		gold.style.top= event.clientY+"px";
+	})
+</script>
+</body>
+</html>

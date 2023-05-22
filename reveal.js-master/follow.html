@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Follow The Mouse</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		 
+		#box{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://i.pinimg.com/originals/a8/d1/1c/a8d11c540350cdd1b2a87c26fb1bb4e8.gif);
+			position:absolute;
+			transition: 1s;
+		}
+
+		#person{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			transition: 0s;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<div id="person"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				person.style.left = event.clientX -40  + "px";
+				person.style.top = event.clientY -50+ "px";
+			}
+		);
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				box.style.left = event.clientX -50 + "px";
+				box.style.top = event.clientY -50 + "px";
+			}
+		);
+	</script>
+</body>
+</html>

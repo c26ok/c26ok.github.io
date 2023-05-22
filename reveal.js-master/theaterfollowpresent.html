@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Follow The Mouse</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		 
+		#box{
+			width:200px;
+			height:200px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://preview.redd.it/h54jipp23lq51.png?auto=webp&s=e1d7b5be1800ad20b11973e19d3fc31228b6b1ae);
+			position:absolute;
+			transition: 1s;
+		}
+
+		#person{
+			width:100px;
+			height:100px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://www.mtishows.com/sites/default/files/styles/content_image/public/marketplace/audrey_stage_2_with_actor_copy_0.png?itok=MTHFLUqz);
+			position:absolute;
+			transition: 0s;
+		}
+	
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+	<div id="person"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				person.style.left = event.clientX +10  + "px";
+				person.style.top = event.clientY + 20+ "px";
+			}
+		);
+		document.addEventListener("mousemove", function (event){
+				console.log(event.clientX, event.clientY);
+				box.style.left = event.clientX + "px";
+				box.style.top = event.clientY - 20 + "px";
+			}
+		);
+	</script>
+</body>
+</html>

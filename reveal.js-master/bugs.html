@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.bug{
+			width: 100px;
+			height: 100px;
+			background-image:  url(bird.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			transition: 2s;
+		}
+		#leader{
+			width: 100px;
+			height: 100px;
+			background-image:  url(bird.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	function ladybugs (){
+		var bug = document.createElement("div")
+		document.body.appendChild(bug);
+		bug.classList.add('bug')
+		var leader = document.createElement("leader")
+	function moveleader () {leader.style.left = Math.random()*10000+"px"}
+
+	setInterval(move, 900)
+	
+	function topleader () {leader.style.top = Math.random()*7000+"px"}
+
+	setInterval(top, 900)
+	
+	function move () {bug.style.left = leader.style.left + Math.random()*500+"px"}
+
+	setInterval(move, 600)
+	
+	function top () {bug.style.top = leader.style.top + Math.random()*350+"px"}
+
+	setInterval(top, 600)
+	
+	}
+
+
+for(var i = 0; i < 101; i=i+1){
+		ladybugs ()
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#square{
+			height: 25px;
+  			width: 25px;
+  			border-radius: 50%;
+  			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+
+<!-- what is happening:
+circles of different sizes
+changing colors
+moving a random amount of space away from were it was
+follows the mouse
+when it follows the mouse it condences
+
+Know how to do:
+make a funtion that creates divs and assigns them random sizes
+make a function that uses rgb with random variables for each to determine color
+make a function that adds a random number in between -20 to  20 or something that is added to the current possition
+add an event listener for when it moves to make the possition correspond with the current location and during this the other functions are deactivated. Duiring this the preivious function is reduced to -2 and 2 or something -->
+
+<script type="text/javascript">
+	   var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    for (let i = 0; i < 24; i++) {
+        var square = document.createElement('div');
+            document.body.appendChild(square);
+            square.style.height = "25px";
+  			square.style.width = "25px";
+  			square.style.borderRadius = "50%";
+            square.style.display = "absolute";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.backgroundSize = "contain";
+            square.style.backgroundColor = colors[i%6];
+            ca
+            	document.addEventListener("click", function(event){
+			var pos = Math.floor(Math.random() * 1.99)+1;
+			if(pos == 1){
+				var num = Math.floor(Math.random() * 69.99) + 1; 
+			}
+			if(pos == 2){
+				var num = Math.floor(Math.random() * -69.99) + 1; 
+			}
+				console.log(event.clientX, event.clientY);
+				square.style.left = event.clientX - num + "px";
+				square.style.top = event.clientY - num + "px";
+			}
+		);
+		document.addEventListener("click", function(event){
+			var pos = Math.floor(Math.random() * 1.99)+1;
+			if(pos == 1){
+				var num = Math.floor(Math.random() * 69.99) + 1; 
+			}
+			if(pos == 2){
+				var num = Math.floor(Math.random() * -69.99) + 1; 
+			}
+				console.log(event.clientX, event.clientY);
+				square.style.left = event.clientX - num + "px";
+				square.style.top = event.clientY - num + "px";
+			}
+		);
+    }
+		
+</script>
+</body>
+</html>
